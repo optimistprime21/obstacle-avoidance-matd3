@@ -363,15 +363,15 @@ class GazeboEnv:
                 if target:
                     target_reward = 7000
                 if collision:
-                    collision_penalty = -3000
+                    collision_penalty = -200
             else:
                 big_distance_reward = (10 - distance)*2
                 prev_distance_reward = (prev_distance - distance)*1500
                 obstacle_penalty = 0.0
                 if min_laser < 0.5:
-                    obstacle_penalty = (1.0 - min_laser)*200
-                turning_penalty = 2* abs(action[1])
-                forward_reward = 2* action[0]
+                    obstacle_penalty = (1.0 - min_laser)*100
+                turning_penalty = 0.5* abs(action[1])
+                forward_reward = 0.5* action[0]
             total_reward = big_distance_reward + prev_distance_reward + forward_reward - turning_penalty - obstacle_penalty + target_reward + collision_penalty
         reward_components = {
             "agent_id" : agent_id,
