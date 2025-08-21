@@ -71,7 +71,9 @@ There are **two test environments** available:
 * **`ComplexEnv`** → larger area with more complex shapes.
 * **`GateEnv`** → includes a gate that robots must pass through to reach their goals.
 
-![Complex Environment](img/ComplexEnv.png) ![Gate Environment](img/GateEnv.png)
+<img src="img/ComplexEnv.png" alt="Complex Environment" width="500"/>
+<img src="img/GateEnv.png" alt="Gate Environment" width="500"/>
+
 
 ### 1. Choose the test environment
 
@@ -117,8 +119,9 @@ If you want to make the training and testing process faster, you can adjust the 
 However, if you do this, you must also update the TIME_DELTA value in the code.
 For example, if you apply the settings shown in the image, you should write TIME_DELTA / 8 instead of the default TIME_DELTA.
 
-
-![Gazebo Physics Properties](img/gazebo_properties.png)
+<p align="center">
+  <img src="img/gazebo_properties.png" alt="Gazebo Physics Properties"/>
+</p>
 
 
 ## Citation
