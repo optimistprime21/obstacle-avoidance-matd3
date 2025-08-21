@@ -107,6 +107,22 @@ Finally, run:
 python test.py
 ```
 
+## Note:
+If you want to make the training and testing process faster, you can adjust the Real Time Update Rate and Max Step Size under Physics Properties in Gazebo (see the image below).
+However, if you do this, you must also update the TIME_DELTA value in the code.
+For example, if you apply the settings shown in the image, you should write TIME_DELTA / 8 instead of the default TIME_DELTA.
+![Gazebo Physics Properties](img/gazebo_properties.png)
+
+
+## Citation
+
+This codebase adapts the single-agent TD3 implementation from:
+
+> Reinis Cimurs, Il Hong Suh, Jin Han Lee,  
+> "Goal-Driven Autonomous Exploration Through Deep Reinforcement Learning,"  
+> IEEE Robotics and Automation Letters, vol. 7, no. 2, pp. 730-737, 2022.  
+> [DOI: 10.1109/LRA.2021.3133591](https://doi.org/10.1109/LRA.2021.3133591)
+
 
 
 
