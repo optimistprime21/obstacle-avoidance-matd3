@@ -304,7 +304,7 @@ class BaseEnv:
                     target_reward = 7000
 
                 if collision:
-                    collision_penalty = -3000
+                    collision_penalty = -200
 
             else:
                 
@@ -314,11 +314,11 @@ class BaseEnv:
                 # Penalty for getting too close to obstacles
                 obstacle_penalty = 0.0
                 if min_laser < 1.0:
-                    obstacle_penalty = (1.0 - min_laser)*200
+                    obstacle_penalty = (1.0 - min_laser)*100
 
                 # Penalty for sharp turns
-                turning_penalty = 10* abs(action[1])
-                forward_reward = 10* action[0]  # reward for moving forward
+                turning_penalty = 0.5* abs(action[1])
+                forward_reward = 0.5* action[0]  # reward for moving forward
 
             total_reward = big_distance_reward + prev_distance_reward + forward_reward - turning_penalty - obstacle_penalty + target_reward + collision_penalty
             
