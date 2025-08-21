@@ -10,7 +10,6 @@ This repository implements a multi-agent reinforcement learning framework for ob
 - **Training & Testing Scripts:** Modular scripts for training agents and evaluating performance.
 - **Reward Logging:** Automated export of reward logs for analysis.
 
-## Folder Structure
 
 
 
