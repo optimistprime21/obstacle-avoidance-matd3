@@ -16,11 +16,12 @@ This repository implements a multi-agent reinforcement learning framework for ob
 ## Setup
 
 Clone this repository into your workspace:
-   ```bash
-   cd ~/catkin_ws/src
-   git clone https://github.com/optimistprime21/obstacle-avoidance-matd3.git
-   cd ~/catkin_ws
-   catkin build
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/optimistprime21/obstacle-avoidance-matd3.git
+cd ~/catkin_ws
+catkin build
+```
 
 ## **Training**
 
