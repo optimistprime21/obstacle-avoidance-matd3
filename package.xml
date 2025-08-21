@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>sac_marl</name>
+  <name>obstacle-avoidance-matd3</name>
   <version>0.0.0</version>
   <description>The obstacle-avoidance-matd3 package</description>
 
