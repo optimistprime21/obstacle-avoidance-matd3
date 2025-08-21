@@ -10,6 +10,7 @@ This repository implements a multi-agent reinforcement learning framework for ob
 - **Training & Testing Scripts:** Modular scripts for training agents and evaluating performance.
 - **Reward Logging:** Automated export of reward logs for analysis.
 
+![Obstacle Avoidance with Multi-Agent TD3](img/matd3_training.png)
 
 
 
@@ -68,6 +69,8 @@ There are **two test environments** available:
 * **`ComplexEnv`** → larger area with more complex shapes.
 * **`GateEnv`** → includes a gate that robots must pass through to reach their goals.
 
+![Complex Environment](img/ComplexEnv.png) ![Gate Environment](img/GateEnv.png)
+
 ### 1. Choose the test environment
 
 Open `test.py` and modify the following lines according to your choice:
@@ -111,6 +114,8 @@ python test.py
 If you want to make the training and testing process faster, you can adjust the Real Time Update Rate and Max Step Size under Physics Properties in Gazebo (see the image below).
 However, if you do this, you must also update the TIME_DELTA value in the code.
 For example, if you apply the settings shown in the image, you should write TIME_DELTA / 8 instead of the default TIME_DELTA.
+
+
 ![Gazebo Physics Properties](img/gazebo_properties.png)
 
 
