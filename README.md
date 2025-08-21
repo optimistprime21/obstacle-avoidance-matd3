@@ -10,7 +10,9 @@ This repository implements a multi-agent reinforcement learning framework for ob
 - **Training & Testing Scripts:** Modular scripts for training agents and evaluating performance.
 - **Reward Logging:** Automated export of reward logs for analysis.
 
-![Obstacle Avoidance with Multi-Agent TD3](img/matd3_training.png)
+<p align="center">
+  <img src="img/matd3_training.png" alt="Obstacle Avoidance with Multi-Agent TD3" width="500"/>
+</p>
 
 
 
