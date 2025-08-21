@@ -1,0 +1,35 @@
+<launch>
+
+    <!-- Launch Gazebo with either gate world or complex world -->
+    <include file="$(find obstacle-avoidance-matd3)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find obstacle-avoidance-matd3)/worlds/complex.world"/>
+    </include>
+
+
+    <!-- BEGIN ROBOT 1-->
+    <group ns="r0">
+        <param name="tf_prefix" value="r0_tf" />
+        <param name="robot_description"
+            command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro" />
+        <include file="$(find obstacle-avoidance-matd3)/launch/one_robot.launch" >
+            <arg name="init_pose" value="-x -1 -y 0.5 -z 0" />
+            <arg name="robot_name"  value="r0" />
+        </include>
+    </group>
+
+    <!-- BEGIN ROBOT 2-->
+    <group ns="r1">
+        <param name="tf_prefix" value="r1_tf" />
+        <param name="robot_description"
+            command="$(find xacro)/xacro $(find turtlebot3_description)/urdf/turtlebot3_burger.urdf.xacro" />
+        <include file="$(find obstacle-avoidance-matd3)/launch/one_robot.launch" >
+            <arg name="init_pose" value="-x 1 -y 0.5 -z 0" />
+            <arg name="robot_name"  value="r1" />
+        </include>
+    </group>
+
+
+    <!-- Visualization -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find obstacle-avoidance-matd3)/rviz/turtlebot3_gazebo_model.rviz" />
+
+</launch>
