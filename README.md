@@ -13,7 +13,7 @@ This repository implements a multi-agent reinforcement learning framework for ob
 
 
 
-### Setup
+## Setup
 
 Clone this repository into your workspace:
    ```bash
@@ -22,7 +22,7 @@ Clone this repository into your workspace:
    cd ~/catkin_ws
    catkin build
 
-### **Training**
+## **Training**
 
 1. **Modify training script**
 
